@@ -83,7 +83,7 @@ namespace ASPCOREAPI
             //            ValidAudience = Configuration["JWT:audience"]
             //        }
             //    );
-
+            services.AddMvc();
 
         }
 

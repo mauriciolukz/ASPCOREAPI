@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using ASPCOREAPI.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -12,6 +13,7 @@ namespace ASPCOREAPI.Controllers
 {
     [ApiController]
     [Authorize]
+    //[Authorize(Policy = Policies.User)]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
